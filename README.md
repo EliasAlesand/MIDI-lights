@@ -24,5 +24,11 @@ Some customization require code changes:
  lights such that they line up with keys on a physical piano.
 * Each MIDI channel is assigned a color that will show up on the LED lights. In the source code they are set to some arbitrarily chosen colors in the dictionary `COLORS` and can be changed to the users preference.
 ## Dependencies
-[rpi_ws281x](https://github.com/jgarff/rpi_ws281x) is used to control the LED strip from the Raspberry Pi  
-[Mido](https://github.com/olemb/mido) is used to convert MIDI files to easy to work with objects
+[rpi_ws281x](https://github.com/jgarff/rpi_ws281x) is used to control the LED strip from the Raspberry Pi.  
+[Mido](https://github.com/olemb/mido) is used to convert MIDI files to easy to work with objects.
+
+## Future additions
+Support to take real time input from a MIDI source.
+
+## Contact
+elias.alesand@gmail.com
