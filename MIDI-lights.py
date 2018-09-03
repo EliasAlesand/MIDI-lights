@@ -28,7 +28,7 @@ def colorWipe(strip, color, wait_ms=50):
 if __name__ == '__main__':
 	# Process arguments
 	parser = argparse.ArgumentParser()
-	parser.add_argument('-s', '--song', action='store', dest='song',help='song file', default='songs/canon.mid') # MIDI file
+	parser.add_argument('-s', '--song', action='store', dest='song',help='song file') # MIDI file
 	parser.add_argument('-d', '--debug', action='store_true', help='Print midi messages') # Prints MIDI messages to standard output
 	parser.add_argument('-b', '--brightness', action='store',dest='brightness', help='set LED brightness (0-255), default 50', default=50) # Set brightness
 	parser.add_argument('-p', '--pace', action='store',dest='pace', help='set song pace multiplier, 1 is normal speed, 2 is double etc.', default=1) # Set song pace
@@ -38,7 +38,7 @@ if __name__ == '__main__':
 	strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL)
 	# Intialize the library (must be called once before other functions).
 	strip.begin()
-	# Mapping midi notes to LEDs. Set to your own preference. Standard piano notes correspond to MIDI numbers 21-108
+	# Mapping midi notes to LEDs. Set to your own preference. Standard piano notes correspond to MIDI notes 21-108
 	for i in range(27,44):
 		MIDI_TO_LED[i]=(i-27)*2
 	for i in range(44,72):
@@ -46,7 +46,7 @@ if __name__ == '__main__':
 	for i in range(71,100):
 		MIDI_TO_LED[i]=(i-27)*2-2
 	b = int(args.brightness)
-	# Channel colors. Set to your own preference.
+	# Channel colors. Set to your own preference. 
 	COLORS = {0:Color(b,0,0),1:Color(b/3,2*b/3,0),2:Color(0,0,b),3:Color(b/2,b/2,0),4:Color(b/2,0,b/2),5:Color(0,b/2,b/2)}
 	print ('Press Ctrl-C to quit.')
 	try:
