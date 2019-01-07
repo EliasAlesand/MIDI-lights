@@ -5,7 +5,7 @@ Usage of this program requires a Raspberry Pi and a [NeoPixel LED strip](https:/
 Confirmed to work with Python 2.7.9, a Raspberry Pi 3 Model B and a 144 LED NeoPixel.
 
 Useful links for wiring:  
-https://learn.adafruit.com/neopixels-on-raspberry-pi/wiring  
+https://learn.adafruit.com/neopixels-on-raspberry-pi/raspberry-pi-wiring  
 https://learn.adafruit.com/adafruit-neopixel-uberguide/best-practices   
 
 Follow [this guide](https://learn.adafruit.com/neopixels-on-raspberry-pi/software) to download the necessary package to control the LED strip from the Raspberry Pi and try the examples to make sure that the LED strip is wired and works correctly. If the LED lights are flickering, try editing `/boot/config.txt` and add the lines `hdmi_force_hotplug=1` and `hdmi_force_edid_audio=1`.
