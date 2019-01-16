@@ -8,7 +8,7 @@ Useful links for wiring:
 https://learn.adafruit.com/neopixels-on-raspberry-pi/raspberry-pi-wiring  
 https://learn.adafruit.com/adafruit-neopixel-uberguide/best-practices   
 
-Follow [this guide](https://learn.adafruit.com/neopixels-on-raspberry-pi/software) to download the necessary package to control the LED strip from the Raspberry Pi and try the examples to make sure that the LED strip is wired and works correctly. If the LED lights are flickering, try editing `/boot/config.txt` and add the lines `hdmi_force_hotplug=1` and `hdmi_force_edid_audio=1`.
+Follow [this guide](https://core-electronics.com.au/tutorials/ws2812-addressable-leds-raspberry-pi-quickstart-guide.html) to download the necessary package to control the LED strip from the Raspberry Pi and try the examples to make sure that the LED strip is wired and works correctly. If the LED lights are flickering, try editing `/boot/config.txt` and add the lines `hdmi_force_hotplug=1` and `hdmi_force_edid_audio=1`.
 
 
 Run the program with the command:  
